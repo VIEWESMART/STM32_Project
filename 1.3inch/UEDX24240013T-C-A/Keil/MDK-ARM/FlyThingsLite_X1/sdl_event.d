@@ -1,0 +1,9 @@
+flythingslite_x1\sdl_event.o: ..\flyport\event\SDL_event.c
+flythingslite_x1\sdl_event.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+flythingslite_x1\sdl_event.o: ..\flyport\event\event.h
+flythingslite_x1\sdl_event.o: ..\include\context/common.h
+flythingslite_x1\sdl_event.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+flythingslite_x1\sdl_event.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
+flythingslite_x1\sdl_event.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+flythingslite_x1\sdl_event.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+flythingslite_x1\sdl_event.o: ..\include\context/message.h

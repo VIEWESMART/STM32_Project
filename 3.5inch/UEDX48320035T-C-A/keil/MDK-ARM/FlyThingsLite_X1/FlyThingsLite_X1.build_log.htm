@@ -1,0 +1,362 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 11 Administrator, 1, LIC=EXJT4-FLSJB-CX5U6-D3Q0H-T55IS-STTYY
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.26.2.0
+Toolchain Path:  D:\Keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DARMCM1.DLL V1.19.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.5.0
+Dialog DLL:      TARMCM1.DLL V1.14.0.0
+ 
+<h2>Project:</h2>
+D:\LZY\UI\ZK_TOUCH\SPIportZK\DXED32240024T-C-A\ThreeScreenMerging\KEIL\TOUCH+TEST_changan_shangji\3.5_TOUCH_480x320\MDK-ARM\FlyThingsLite_X1.uvprojx
+Project File Date:  12/28/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil5\ARM\ARMCC\Bin'
+Build target 'FlyThingsLite_X1'
+compiling usermain.c...
+../include/context/message.h(19): warning:  #1295-D: Deprecated declaration message_init - give arg types
+  bool message_init();
+../include/context/message.h(20): warning:  #1295-D: Deprecated declaration message_deinit - give arg types
+  void message_deinit();
+../include/widget/widget.h(71): warning:  #65-D: expected a ";"
+  } widget_t;
+../include/graphics/video.h(23): warning:  #1295-D: Deprecated declaration video_init - give arg types
+  bool video_init();
+../include/graphics/video.h(24): warning:  #1295-D: Deprecated declaration video_deinit - give arg types
+  void video_deinit();
+../include/graphics/video.h(25): warning:  #1295-D: Deprecated declaration video_flip - give arg types
+  void video_flip();
+../include/context/guicontext.h(79): warning:  #1295-D: Deprecated declaration gui_context_get_current_page - give arg types
+  uint8_t gui_context_get_current_page();
+../include/timer/timer.h(13): warning:  #1295-D: Deprecated declaration timer_init - give arg types
+  bool timer_init();
+../include/timer/timer.h(14): warning:  #1295-D: Deprecated declaration timer_deinit - give arg types
+  void timer_deinit();
+../include/timer/timer.h(15): warning:  #1295-D: Deprecated declaration timer_check - give arg types
+  void timer_check();
+..\user\usermain.c(49): warning:  #144-D: a value of type "_Bool (*)(void)" cannot be used to initialize an entity of type "void (*)()"
+  	.poll_event = event_poll,
+..\user\usermain.c(52): warning:  #144-D: a value of type "int (*)(const char *restrict, ...)" cannot be used to initialize an entity of type "void (*)(const char *, ...)"
+  	.fly_debug = printf//print_null
+..\user\usermain.c(146): warning:  #1-D: last line of file ends without a newline
+  }
+..\user\usermain.c(27): warning:  #550-D: variable "tick2ms"  was set but never used
+  static uint32_t tick2ms = 0;
+..\user\usermain.c: 16 warnings, 0 errors
+compiling dev_time17.c...
+../include/context/message.h(19): warning:  #1295-D: Deprecated declaration message_init - give arg types
+  bool message_init();
+../include/context/message.h(20): warning:  #1295-D: Deprecated declaration message_deinit - give arg types
+  void message_deinit();
+../include/widget/widget.h(71): warning:  #65-D: expected a ";"
+  } widget_t;
+../include/graphics/video.h(23): warning:  #1295-D: Deprecated declaration video_init - give arg types
+  bool video_init();
+../include/graphics/video.h(24): warning:  #1295-D: Deprecated declaration video_deinit - give arg types
+  void video_deinit();
+../include/graphics/video.h(25): warning:  #1295-D: Deprecated declaration video_flip - give arg types
+  void video_flip();
+../include/context/guicontext.h(79): warning:  #1295-D: Deprecated declaration gui_context_get_current_page - give arg types
+  uint8_t gui_context_get_current_page();
+..\flyport\bsp\dev_time17.c: 7 warnings, 0 errors
+compiling other_app.c...
+../include/context/message.h(19): warning:  #1295-D: Deprecated declaration message_init - give arg types
+  bool message_init();
+../include/context/message.h(20): warning:  #1295-D: Deprecated declaration message_deinit - give arg types
+  void message_deinit();
+../include/widget/widget.h(71): warning:  #65-D: expected a ";"
+  } widget_t;
+../include/graphics/video.h(23): warning:  #1295-D: Deprecated declaration video_init - give arg types
+  bool video_init();
+../include/graphics/video.h(24): warning:  #1295-D: Deprecated declaration video_deinit - give arg types
+  void video_deinit();
+../include/graphics/video.h(25): warning:  #1295-D: Deprecated declaration video_flip - give arg types
+  void video_flip();
+../include/context/guicontext.h(79): warning:  #1295-D: Deprecated declaration gui_context_get_current_page - give arg types
+  uint8_t gui_context_get_current_page();
+..\user\other_app.c: 7 warnings, 0 errors
+compiling ui_context.c...
+../include/context/message.h(19): warning:  #1295-D: Deprecated declaration message_init - give arg types
+  bool message_init();
+../include/context/message.h(20): warning:  #1295-D: Deprecated declaration message_deinit - give arg types
+  void message_deinit();
+../include/widget/widget.h(71): warning:  #65-D: expected a ";"
+  } widget_t;
+../include/graphics/video.h(23): warning:  #1295-D: Deprecated declaration video_init - give arg types
+  bool video_init();
+../include/graphics/video.h(24): warning:  #1295-D: Deprecated declaration video_deinit - give arg types
+  void video_deinit();
+../include/graphics/video.h(25): warning:  #1295-D: Deprecated declaration video_flip - give arg types
+  void video_flip();
+../include/context/guicontext.h(79): warning:  #1295-D: Deprecated declaration gui_context_get_current_page - give arg types
+  uint8_t gui_context_get_current_page();
+..\uifun\ui_context.c: 7 warnings, 0 errors
+compiling air.c...
+../include/context/message.h(19): warning:  #1295-D: Deprecated declaration message_init - give arg types
+  bool message_init();
+../include/context/message.h(20): warning:  #1295-D: Deprecated declaration message_deinit - give arg types
+  void message_deinit();
+../include/widget/widget.h(71): warning:  #65-D: expected a ";"
+  } widget_t;
+../include/graphics/video.h(23): warning:  #1295-D: Deprecated declaration video_init - give arg types
+  bool video_init();
+../include/graphics/video.h(24): warning:  #1295-D: Deprecated declaration video_deinit - give arg types
+  void video_deinit();
+../include/graphics/video.h(25): warning:  #1295-D: Deprecated declaration video_flip - give arg types
+  void video_flip();
+../include/context/guicontext.h(79): warning:  #1295-D: Deprecated declaration gui_context_get_current_page - give arg types
+  uint8_t gui_context_get_current_page();
+..\uifun\logic\air.c: 7 warnings, 0 errors
+compiling coffe.c...
+../include/context/message.h(19): warning:  #1295-D: Deprecated declaration message_init - give arg types
+  bool message_init();
+../include/context/message.h(20): warning:  #1295-D: Deprecated declaration message_deinit - give arg types
+  void message_deinit();
+../include/widget/widget.h(71): warning:  #65-D: expected a ";"
+  } widget_t;
+../include/graphics/video.h(23): warning:  #1295-D: Deprecated declaration video_init - give arg types
+  bool video_init();
+../include/graphics/video.h(24): warning:  #1295-D: Deprecated declaration video_deinit - give arg types
+  void video_deinit();
+../include/graphics/video.h(25): warning:  #1295-D: Deprecated declaration video_flip - give arg types
+  void video_flip();
+../include/context/guicontext.h(79): warning:  #1295-D: Deprecated declaration gui_context_get_current_page - give arg types
+  uint8_t gui_context_get_current_page();
+..\uifun\logic\coffe.c: 7 warnings, 0 errors
+compiling coffework.c...
+../include/context/message.h(19): warning:  #1295-D: Deprecated declaration message_init - give arg types
+  bool message_init();
+../include/context/message.h(20): warning:  #1295-D: Deprecated declaration message_deinit - give arg types
+  void message_deinit();
+../include/widget/widget.h(71): warning:  #65-D: expected a ";"
+  } widget_t;
+../include/graphics/video.h(23): warning:  #1295-D: Deprecated declaration video_init - give arg types
+  bool video_init();
+../include/graphics/video.h(24): warning:  #1295-D: Deprecated declaration video_deinit - give arg types
+  void video_deinit();
+../include/graphics/video.h(25): warning:  #1295-D: Deprecated declaration video_flip - give arg types
+  void video_flip();
+../include/context/guicontext.h(79): warning:  #1295-D: Deprecated declaration gui_context_get_current_page - give arg types
+  uint8_t gui_context_get_current_page();
+..\uifun\logic\coffework.c: 7 warnings, 0 errors
+compiling cook.c...
+../include/context/message.h(19): warning:  #1295-D: Deprecated declaration message_init - give arg types
+  bool message_init();
+../include/context/message.h(20): warning:  #1295-D: Deprecated declaration message_deinit - give arg types
+  void message_deinit();
+../include/widget/widget.h(71): warning:  #65-D: expected a ";"
+  } widget_t;
+../include/graphics/video.h(23): warning:  #1295-D: Deprecated declaration video_init - give arg types
+  bool video_init();
+../include/graphics/video.h(24): warning:  #1295-D: Deprecated declaration video_deinit - give arg types
+  void video_deinit();
+../include/graphics/video.h(25): warning:  #1295-D: Deprecated declaration video_flip - give arg types
+  void video_flip();
+../include/context/guicontext.h(79): warning:  #1295-D: Deprecated declaration gui_context_get_current_page - give arg types
+  uint8_t gui_context_get_current_page();
+..\uifun\logic\cook.c: 7 warnings, 0 errors
+compiling cookwork.c...
+../include/context/message.h(19): warning:  #1295-D: Deprecated declaration message_init - give arg types
+  bool message_init();
+../include/context/message.h(20): warning:  #1295-D: Deprecated declaration message_deinit - give arg types
+  void message_deinit();
+../include/widget/widget.h(71): warning:  #65-D: expected a ";"
+  } widget_t;
+../include/graphics/video.h(23): warning:  #1295-D: Deprecated declaration video_init - give arg types
+  bool video_init();
+../include/graphics/video.h(24): warning:  #1295-D: Deprecated declaration video_deinit - give arg types
+  void video_deinit();
+../include/graphics/video.h(25): warning:  #1295-D: Deprecated declaration video_flip - give arg types
+  void video_flip();
+../include/context/guicontext.h(79): warning:  #1295-D: Deprecated declaration gui_context_get_current_page - give arg types
+  uint8_t gui_context_get_current_page();
+..\uifun\logic\cookwork.c: 7 warnings, 0 errors
+compiling oil.c...
+../include/context/message.h(19): warning:  #1295-D: Deprecated declaration message_init - give arg types
+  bool message_init();
+../include/context/message.h(20): warning:  #1295-D: Deprecated declaration message_deinit - give arg types
+  void message_deinit();
+../include/widget/widget.h(71): warning:  #65-D: expected a ";"
+  } widget_t;
+../include/graphics/video.h(23): warning:  #1295-D: Deprecated declaration video_init - give arg types
+  bool video_init();
+../include/graphics/video.h(24): warning:  #1295-D: Deprecated declaration video_deinit - give arg types
+  void video_deinit();
+../include/graphics/video.h(25): warning:  #1295-D: Deprecated declaration video_flip - give arg types
+  void video_flip();
+../include/context/guicontext.h(79): warning:  #1295-D: Deprecated declaration gui_context_get_current_page - give arg types
+  uint8_t gui_context_get_current_page();
+..\uifun\logic\oil.c: 7 warnings, 0 errors
+compiling rice.c...
+../include/context/message.h(19): warning:  #1295-D: Deprecated declaration message_init - give arg types
+  bool message_init();
+../include/context/message.h(20): warning:  #1295-D: Deprecated declaration message_deinit - give arg types
+  void message_deinit();
+../include/widget/widget.h(71): warning:  #65-D: expected a ";"
+  } widget_t;
+../include/graphics/video.h(23): warning:  #1295-D: Deprecated declaration video_init - give arg types
+  bool video_init();
+../include/graphics/video.h(24): warning:  #1295-D: Deprecated declaration video_deinit - give arg types
+  void video_deinit();
+../include/graphics/video.h(25): warning:  #1295-D: Deprecated declaration video_flip - give arg types
+  void video_flip();
+../include/context/guicontext.h(79): warning:  #1295-D: Deprecated declaration gui_context_get_current_page - give arg types
+  uint8_t gui_context_get_current_page();
+..\uifun\logic\rice.c: 7 warnings, 0 errors
+compiling ricework.c...
+../include/context/message.h(19): warning:  #1295-D: Deprecated declaration message_init - give arg types
+  bool message_init();
+../include/context/message.h(20): warning:  #1295-D: Deprecated declaration message_deinit - give arg types
+  void message_deinit();
+../include/widget/widget.h(71): warning:  #65-D: expected a ";"
+  } widget_t;
+../include/graphics/video.h(23): warning:  #1295-D: Deprecated declaration video_init - give arg types
+  bool video_init();
+../include/graphics/video.h(24): warning:  #1295-D: Deprecated declaration video_deinit - give arg types
+  void video_deinit();
+../include/graphics/video.h(25): warning:  #1295-D: Deprecated declaration video_flip - give arg types
+  void video_flip();
+../include/context/guicontext.h(79): warning:  #1295-D: Deprecated declaration gui_context_get_current_page - give arg types
+  uint8_t gui_context_get_current_page();
+..\uifun\logic\ricework.c: 7 warnings, 0 errors
+compiling wash.c...
+../include/context/message.h(19): warning:  #1295-D: Deprecated declaration message_init - give arg types
+  bool message_init();
+../include/context/message.h(20): warning:  #1295-D: Deprecated declaration message_deinit - give arg types
+  void message_deinit();
+../include/widget/widget.h(71): warning:  #65-D: expected a ";"
+  } widget_t;
+../include/graphics/video.h(23): warning:  #1295-D: Deprecated declaration video_init - give arg types
+  bool video_init();
+../include/graphics/video.h(24): warning:  #1295-D: Deprecated declaration video_deinit - give arg types
+  void video_deinit();
+../include/graphics/video.h(25): warning:  #1295-D: Deprecated declaration video_flip - give arg types
+  void video_flip();
+../include/context/guicontext.h(79): warning:  #1295-D: Deprecated declaration gui_context_get_current_page - give arg types
+  uint8_t gui_context_get_current_page();
+..\uifun\logic\wash.c: 7 warnings, 0 errors
+compiling wash2.c...
+../include/context/message.h(19): warning:  #1295-D: Deprecated declaration message_init - give arg types
+  bool message_init();
+../include/context/message.h(20): warning:  #1295-D: Deprecated declaration message_deinit - give arg types
+  void message_deinit();
+../include/widget/widget.h(71): warning:  #65-D: expected a ";"
+  } widget_t;
+../include/graphics/video.h(23): warning:  #1295-D: Deprecated declaration video_init - give arg types
+  bool video_init();
+../include/graphics/video.h(24): warning:  #1295-D: Deprecated declaration video_deinit - give arg types
+  void video_deinit();
+../include/graphics/video.h(25): warning:  #1295-D: Deprecated declaration video_flip - give arg types
+  void video_flip();
+../include/context/guicontext.h(79): warning:  #1295-D: Deprecated declaration gui_context_get_current_page - give arg types
+  uint8_t gui_context_get_current_page();
+..\uifun\logic\wash2.c: 7 warnings, 0 errors
+compiling washwork.c...
+../include/context/message.h(19): warning:  #1295-D: Deprecated declaration message_init - give arg types
+  bool message_init();
+../include/context/message.h(20): warning:  #1295-D: Deprecated declaration message_deinit - give arg types
+  void message_deinit();
+../include/widget/widget.h(71): warning:  #65-D: expected a ";"
+  } widget_t;
+../include/graphics/video.h(23): warning:  #1295-D: Deprecated declaration video_init - give arg types
+  bool video_init();
+../include/graphics/video.h(24): warning:  #1295-D: Deprecated declaration video_deinit - give arg types
+  void video_deinit();
+../include/graphics/video.h(25): warning:  #1295-D: Deprecated declaration video_flip - give arg types
+  void video_flip();
+../include/context/guicontext.h(79): warning:  #1295-D: Deprecated declaration gui_context_get_current_page - give arg types
+  uint8_t gui_context_get_current_page();
+..\uifun\logic\washwork.c: 7 warnings, 0 errors
+compiling menu.c...
+../include/context/message.h(19): warning:  #1295-D: Deprecated declaration message_init - give arg types
+  bool message_init();
+../include/context/message.h(20): warning:  #1295-D: Deprecated declaration message_deinit - give arg types
+  void message_deinit();
+../include/widget/widget.h(71): warning:  #65-D: expected a ";"
+  } widget_t;
+../include/graphics/video.h(23): warning:  #1295-D: Deprecated declaration video_init - give arg types
+  bool video_init();
+../include/graphics/video.h(24): warning:  #1295-D: Deprecated declaration video_deinit - give arg types
+  void video_deinit();
+../include/graphics/video.h(25): warning:  #1295-D: Deprecated declaration video_flip - give arg types
+  void video_flip();
+../include/context/guicontext.h(79): warning:  #1295-D: Deprecated declaration gui_context_get_current_page - give arg types
+  uint8_t gui_context_get_current_page();
+..\uifun\logic\menu.c: 7 warnings, 0 errors
+compiling test.c...
+../include/context/message.h(19): warning:  #1295-D: Deprecated declaration message_init - give arg types
+  bool message_init();
+../include/context/message.h(20): warning:  #1295-D: Deprecated declaration message_deinit - give arg types
+  void message_deinit();
+../include/widget/widget.h(71): warning:  #65-D: expected a ";"
+  } widget_t;
+../include/graphics/video.h(23): warning:  #1295-D: Deprecated declaration video_init - give arg types
+  bool video_init();
+../include/graphics/video.h(24): warning:  #1295-D: Deprecated declaration video_deinit - give arg types
+  void video_deinit();
+../include/graphics/video.h(25): warning:  #1295-D: Deprecated declaration video_flip - give arg types
+  void video_flip();
+../include/context/guicontext.h(79): warning:  #1295-D: Deprecated declaration gui_context_get_current_page - give arg types
+  uint8_t gui_context_get_current_page();
+..\uifun\logic\test.c: 7 warnings, 0 errors
+compiling test2.c...
+../include/context/message.h(19): warning:  #1295-D: Deprecated declaration message_init - give arg types
+  bool message_init();
+../include/context/message.h(20): warning:  #1295-D: Deprecated declaration message_deinit - give arg types
+  void message_deinit();
+../include/widget/widget.h(71): warning:  #65-D: expected a ";"
+  } widget_t;
+../include/graphics/video.h(23): warning:  #1295-D: Deprecated declaration video_init - give arg types
+  bool video_init();
+../include/graphics/video.h(24): warning:  #1295-D: Deprecated declaration video_deinit - give arg types
+  void video_deinit();
+../include/graphics/video.h(25): warning:  #1295-D: Deprecated declaration video_flip - give arg types
+  void video_flip();
+../include/context/guicontext.h(79): warning:  #1295-D: Deprecated declaration gui_context_get_current_page - give arg types
+  uint8_t gui_context_get_current_page();
+..\uifun\logic\test2.c: 7 warnings, 0 errors
+linking...
+Program Size: Code=22984 RO-data=796 RW-data=156 ZI-data=3772  
+FromELF: creating hex file...
+After Build - User command #1: fromelf.exe --bin -o FlyThingsLite_X1.bin "FlyThingsLite_X1\FlyThingsLite_X1.axf"
+"FlyThingsLite_X1\FlyThingsLite_X1.axf" - 0 Error(s), 133 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.4.0.pack
+                ARM.CMSIS.5.4.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.2
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32G0xx_DFP.1.2.0.pack
+                Keil.STM32G0xx_DFP.1.2.0
+                STMicroelectronics STM32G0 Series Device Support
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_FlyThingsLite_X1
+  D:\Keil5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include
+  D:\Keil5\ARM\PACK\Keil\STM32G0xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.2
+Build Time Elapsed:  00:00:10
+</pre>
+</body>
+</html>

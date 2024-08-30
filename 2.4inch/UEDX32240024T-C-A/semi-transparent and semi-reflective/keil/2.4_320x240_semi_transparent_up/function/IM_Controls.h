@@ -1,0 +1,36 @@
+#ifndef _IM_CONTROLS_H_
+#define _IM_CONTROLS_H_
+
+unsigned char IM_Init(void);
+
+#define UE019QV_AB40_A001A									0
+#define UE035HV_RB40_A118_ST7796S						0
+#define	UE039HV_RB40_A009A_4SPI_3041A				0
+#define UE024QV_RB40_A038A_9307							1
+
+#if UE019QV_AB40_A001A							//170x320
+#define IM0()				HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_RESET)
+#define IM1()				HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_SET)
+#define IM2()				HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET)
+#endif
+
+#if	UE035HV_RB40_A118_ST7796S				//480x320
+#define IM0()				HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_SET)
+#define IM1()				HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_SET)
+#define IM2()				HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET)
+#endif
+
+#if	UE039HV_RB40_A009A_4SPI_3041A		//480x272
+#define IM0()				HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_SET)
+#define IM1()				HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_RESET)
+#define IM2()				HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET)
+#endif
+
+#if UE024QV_RB40_A038A_9307					//320x240
+#define IM0()				HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_RESET)
+#define IM1()				HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_SET)
+#define IM2()				HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET)
+#endif
+
+#endif
+ 
